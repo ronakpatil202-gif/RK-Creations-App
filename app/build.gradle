@@ -27,3 +27,7 @@ dependencies {
     implementation 'androidx.core:core:1.15.0'
     implementation 'androidx.webkit:webkit:1.14.0'
 }
+
+configurations.all {
+    exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk8'
+}
